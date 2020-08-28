@@ -35,7 +35,15 @@ export function hello(){
 }
 
 export default function(){
-  console.log("Default task");
+  console.log("Default Task");
 }
 
+```
+
+```bash
+duke hello
+# prints: Hello Task
+
+duke
+# prints: Default Task
 ```
