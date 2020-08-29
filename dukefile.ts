@@ -6,12 +6,9 @@ switch (Deno.build.os) {
   case "windows":
     dukefilePath = dukefilePath.slice("c:".length);
     break;
-
-  default:
-    break;
 }
 
-let dukefile: { [key: string]: Function };
+let dukefile: any;
 
 try {
   dukefile = await import(dukefilePath);
